@@ -9,6 +9,12 @@ The helium node summary contains a lot of information about the node status. It 
 ```
 https://<your-linxdot-ip>/summary
 ```
+There is also the option to add the GET paramter ```quick=true``` to the url
+```
+https://<your-linxdot-ip>/summary?quick=true
+```
+The response is a lot quicker, however not all values are updated.
+
 Example response:
 ```
 {
