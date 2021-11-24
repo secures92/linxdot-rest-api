@@ -2,11 +2,8 @@
 This repository acts as unofficial documentation of the Linxdot REST API.
 
 ## Webinterface
-These findings were discovered in the javascript code of the current web interface of a Linxdot miner. The webinterface can be accessed by navigating to ```https://<your-linxdot-ip>```. However this interface communicates with the miner using REST.
-  
-#### Acessing miner data
-Until now two data access url could be discovered. This information can be accessed without authentication.
-  
+These findings were discovered in the javascript code of the current web interface of a Linxdot miner. The webinterface can be accessed by navigating to ```https://<your-linxdot-ip>```. However this interface communicates with the miner using REST. To access data no authentication is needed.
+    
 ## Helium Node Summary
 The helium node summary contains a lot of information about the node status. It can be accessed via
 ```
@@ -68,6 +65,29 @@ Example response:
 ```
 TODO: List and document attributes
 
+## Helium Activity
+The activity of the miner can be accessed via:
+```
+https://<your-linxdot-ip>/activity
+```
+It with a json array containing the last 10 activites of the miner.
+
+Example response:
+```
+[
+  {"block": 1110469, "time": 1637763272, "amount": "0.0553", "type": "rewards_v2"}, 
+  {"block": 1110437, "time": 1637761513, "amount": "0.0493", "type": "rewards_v2"}, 
+  {"block": 1110399, "time": 1637759510, "amount": "0.0555", "type": "rewards_v2"}, 
+  {"block": 1110367, "time": 1637757733, "amount": "0.0186", "type": "rewards_v2"}, 
+  {"block": 1110325, "time": 1637755386, "amount": "0.0156", "type": "rewards_v2"}, 
+  {"block": 1110290, "time": 1637752807, "amount": "0.0314", "type": "rewards_v2"}, 
+  {"block": 1110256, "time": 1637750146, "amount": "0.0058", "type": "rewards_v2"}, 
+  {"block": 1110220, "time": 1637747946, "amount": "0.0061", "type": "rewards_v2"}, 
+  {"block": 1110173, "time": 1637745337, "amount": "0.0148", "type": "rewards_v2"}, 
+  {"block": 1110140, "time": 1637743479, "amount": "0.0322", "type": "rewards_v2"}
+]
+```
+TODO: List and document attributes
   
 ## Configure miner settings
 The configuration of the miner is also done via REST. However this needs authentication.
