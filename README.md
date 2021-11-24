@@ -9,11 +9,6 @@ The helium node summary contains a lot of information about the node status. It 
 ```
 https://<your-linxdot-ip>/summary
 ```
-There is also the option to add the GET paramter ```quick=true``` to the url
-```
-https://<your-linxdot-ip>/summary?quick=true
-```
-The response is a lot quicker, however not all values are updated.
 
 Example response:
 ```
@@ -50,6 +45,21 @@ Example response:
 ```
 TODO: List and document attributes
 
+There is also the option to add the GET paramter ```quick=true``` to the url
+```
+https://<your-linxdot-ip>/summary?quick=true
+```
+If the quick option is used only the following parameters are updated (unconpleted list)
+```
+"cpu_usage"
+"mem_used"
+"mem_total"
+"swap_used"
+"swap_total"
+"temperature"
+"time"
+...
+```
 
 ## Helium Stats
 The helium stats contain information about the node status. It can be accessed via
