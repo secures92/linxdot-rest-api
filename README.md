@@ -43,7 +43,6 @@ Example response:
   "current_state": "lora_ready"
 }
 ```
-TODO: List and document attributes
 
 There is also the option to add the GET paramter ```quick=true``` to the url
 ```
@@ -79,7 +78,6 @@ Example response:
   "api_height": "1,109,466"
 }
 ```
-TODO: List and document attributes
 
 ## Helium Activity
 The activity of the miner can be accessed via:
@@ -103,9 +101,10 @@ Example response:
   {"block": 1110140, "time": 1637743479, "amount": "0.0322", "type": "rewards_v2"}
 ]
 ```
-TODO: List and document attributes
+
   
 ## Configure miner settings
 The configuration of the miner is also done via REST. However this needs authentication.
-TODO: Document the miner configuration
+
+to be continued...
 
