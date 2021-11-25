@@ -213,6 +213,37 @@ Example response:
 }
 ```
 
+## Troubleshoot output
+The troubleshoot output can be requested via:
+```
+https://<your-linxdot-ip>/troubleshoot
+```
+Example response:
+```
+{
+    "hardware": {
+        "ethernet_present": true, 
+        "wifi_present": true, 
+        "bluetooth_present": true, 
+        "concentrator_present": true, 
+        "ecc_present": true, 
+        "ecc_provisioned": true
+    }, 
+    "network": {
+        "download_speed": 789, 
+        "latency": 48, 
+        "sb_api_reachable": true, 
+        "helium_api_reachable": true
+    }, 
+    "miner": {
+        "region_ok": true, 
+        "listening": true, 
+        "reachable": true, 
+        "direct": true
+    }
+}
+```
+
 ## Configure miner settings
 The configuration of the miner is also done via REST. However this needs authentication.
 
