@@ -165,6 +165,22 @@ Example response:
     "periodic_reboot": false
 }
 ```
+  ## Network test
+A network test can be queried via:
+```
+https://<your-linxdot-ip>/nettest
+```
+
+Example response:
+```
+{
+    "download_speed": 1140, 
+    "latency": 202, 
+    "public_ip": "XXX.XXX.XXX.XXX", 
+    "sb_api_reachable": true, 
+    "helium_api_reachable": true
+}
+```
   
 ## Configure miner settings
 The configuration of the miner is also done via REST. However this needs authentication.
