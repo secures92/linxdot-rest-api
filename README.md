@@ -197,7 +197,22 @@ https://<your-linxdot-ip>/logs/system
 https://<your-linxdot-ip>/logs/kernel
 ```
   
-  
+## Firmware update check
+The status of the firmware update service can be checked with
+```
+https://<your-linxdot-ip>/fwupdate
+```
+
+Example response:
+```
+{
+    "current": "2021.11.23.1", 
+    "latest": "2021.11.23.1", 
+    "beta": false, 
+    "status": "idle"
+}
+```
+
 ## Configure miner settings
 The configuration of the miner is also done via REST. However this needs authentication.
 
