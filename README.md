@@ -84,7 +84,7 @@ The activity of the miner can be accessed via:
 ```
 https://<your-linxdot-ip>/activity
 ```
-It with a json array containing the last 10 activites of the miner.
+It replies with a json array containing the last 10 activites of the miner.
 
 Example response:
 ```
@@ -99,6 +99,43 @@ Example response:
   {"block": 1110220, "time": 1637747946, "amount": "0.0061", "type": "rewards_v2"}, 
   {"block": 1110173, "time": 1637745337, "amount": "0.0148", "type": "rewards_v2"}, 
   {"block": 1110140, "time": 1637743479, "amount": "0.0322", "type": "rewards_v2"}
+]
+```
+
+## Peer Book
+The peer book of the miner can be accessed via:
+```
+https://<your-linxdot-ip>/peer_book
+```
+It replies with a json array containing a list of peers
+
+Example response:
+```
+[
+    {
+        "local": "/ip4/XXX.XXX.XXX.XXX/tcp/44158", 
+        "remote": "/ip4/XXX.XXX.XXX.XXX/tcp/44158", 
+        "p2p": "/p2p/000000000000000000000000000000000000000000000000000", 
+        "name": "some-miner-name1"
+    }, 
+    {
+        "local": "/ip4/XXX.XXX.XXX.XXX/tcp/44158", 
+        "remote": "/ip4/XXX.XXX.XXX.XXX/tcp/2154", 
+        "p2p": "/p2p/000000000000000000000000000000000000000000000000000", 
+        "name": "some-miner-name2"
+    },
+    {
+        "local": "/ip4/XXX.XXX.XXX.XXX/tcp/44158", 
+        "remote": "/ip4/XXX.XXX.XXX.XXX/tcp/44158", 
+        "p2p": "/p2p/000000000000000000000000000000000000000000000000000", 
+        "name": "some-miner-name3"
+    }, 
+    {
+        "local": "/ip4/XXX.XXX.XXX.XXX/tcp/44158", 
+        "remote": "/ip4/XXX.XXX.XXX.XXX/tcp/2154", 
+        "p2p": "/p2p/000000000000000000000000000000000000000000000000000", 
+        "name": "some-miner-name4"
+    }
 ]
 ```
 
