@@ -165,7 +165,7 @@ Example response:
     "periodic_reboot": false
 }
 ```
-  ## Network test
+## Network test
 A network test can be queried via:
 ```
 https://<your-linxdot-ip>/nettest
@@ -181,6 +181,22 @@ Example response:
     "helium_api_reachable": true
 }
 ```
+## Access logs
+Log access is available for the following subsystems:
+```
+packet_forwarder
+miner
+system
+kernel
+```
+It can be individually accessed via
+```
+https://<your-linxdot-ip>/logs/packet_forwarder
+https://<your-linxdot-ip>/logs/miner
+https://<your-linxdot-ip>/logs/system
+https://<your-linxdot-ip>/logs/kernel
+```
+  
   
 ## Configure miner settings
 The configuration of the miner is also done via REST. However this needs authentication.
