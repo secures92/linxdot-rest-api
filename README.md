@@ -1,5 +1,5 @@
 # Linxdot REST API
-This repository acts as unofficial documentation of the Linxdot REST API.
+This repository acts as unofficial documentation of the Linxdot REST API. All content was created by analyzing the javascript files ```common.js``` and ```ìndex.js``` used by the webinterface of the access point. This documentation might be wrong and/or incomplete. Use with care!
 
 ## Webinterface
 These findings were discovered in the javascript code of the current web interface of a Linxdot miner. The webinterface can be accessed by navigating to ```https://<your-linxdot-ip>```. However this interface communicates with the miner using REST. To access data no authentication is needed.
@@ -244,7 +244,7 @@ Example response:
 }
 ```
 
-## Configure miner settings
+## Configure miner
 The configuration of the miner is also done via REST. However this needs authentication.
 
 to be continued...
