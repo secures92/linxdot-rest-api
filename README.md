@@ -139,6 +139,32 @@ Example response:
 ]
 ```
 
+## Node Config
+The node configuration can be accessed via:
+```
+https://<your-linxdot-ip>/config
+```
+
+Example response:
+```
+{
+    "cpu_freq_max": 1500000, 
+    "led_brightness": 1, 
+    "led_ok_color": "green", 
+    "nat_external_ip": null, 
+    "nat_external_port": null, 
+    "nat_internal_port": null, 
+    "panic_on_relayed": true, 
+    "panic_on_unreachable": true, 
+    "force_sync_enabled": false, 
+    "pf_antenna_gain": 3, 
+    "pf_rssi_offset": 0, 
+    "pf_tx_power": 14, 
+    "remote_enabled": true, 
+    "external_wifi_antenna": false, 
+    "periodic_reboot": false
+}
+```
   
 ## Configure miner settings
 The configuration of the miner is also done via REST. However this needs authentication.
