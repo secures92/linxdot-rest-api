@@ -1,6 +1,6 @@
 # Linxdot REST API
 This repository acts as unofficial documentation of the Linxdot REST API. All content was created by analyzing the javascript files ```common.js``` and ```index.js``` used by the webinterface of the access point. This documentation might be wrong and/or incomplete. Use with care!
-This is work in progress. Feel free to append any missing information.
+Also not that this is work in progress. Feel free to append any missing information.
 
 ## Webinterface
 The webinterface of al Linxdot Helium Access Point can be accessed by navigating to ```https://<your-linxdot-ip>```. THe shown interface communicates with the node using REST. For simple data access no authentication is needed. However it is needed to change the settings.
