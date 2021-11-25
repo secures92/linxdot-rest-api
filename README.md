@@ -1,5 +1,5 @@
 # Linxdot REST API
-This repository acts as unofficial documentation of the Linxdot REST API. All content was created by analyzing the javascript files ```common.js``` and ```ìndex.js``` used by the webinterface of the access point. This documentation might be wrong and/or incomplete. Use with care!
+This repository acts as unofficial documentation of the Linxdot REST API. All content was created by analyzing the javascript files ```common.js``` and ```index.js``` used by the webinterface of the access point. This documentation might be wrong and/or incomplete. Use with care!
 This is work in progress. Feel free to append any missing information.
 
 ## Webinterface
