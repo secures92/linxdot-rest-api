@@ -1,9 +1,9 @@
-# Linxdot REST API
-This repository acts as unofficial documentation of the Linxdot REST API. All content was created by analyzing the javascript files ```common.js``` and ```index.js``` used by the webinterface of the access point. This documentation might be wrong and/or incomplete. Use with care!
-Also not that this is work in progress. Feel free to append any missing information.
+# Linxdot REST API (CM4 variant)
+This repository acts as unofficial documentation of the Linxdot REST API (CM4 variant). All content was created by analyzing the javascript files ```common.js``` and ```index.js``` used by the webinterface of the access point. This documentation might be wrong and/or incomplete. Use with care!
+Also note that this is work in progress. Feel free to append any missing information.
 
 ## Webinterface
-The webinterface of al Linxdot Helium Access Point can be accessed by navigating to ```https://<your-linxdot-ip>```. THe shown interface communicates with the node using REST. For simple data access no authentication is needed. However it is needed to change the settings.
+The webinterface of al Linxdot Helium Access Point can be accessed by navigating to ```https://<your-linxdot-ip>```. The shown interface communicates with the node using REST. For simple data access no authentication is needed. However it is needed to change the settings.
     
 ## Helium Node Summary
 The helium node summary contains a lot of information about the node status. It can be accessed via
